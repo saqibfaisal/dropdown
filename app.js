@@ -97,6 +97,7 @@ function mobiles() {
 
 }
 function searchVal() {
+    // let txt = " "
     let mobile = document.getElementById("mobileName")
     // console.log(mobile.value)
     let model = document.getElementById("model")
@@ -106,5 +107,9 @@ function searchVal() {
     var b = model.value
     // var b = "hot10"
     // object[a][b]
-    console.log(object[a][b])
+    // console.log(object[a][b])
+    var Json = JSON.stringify(object[a][b]);  
+    document.getElementById("para").innerHTML = `<h3>${Json}</h3>`
+    // document.write(Json)
+
 }

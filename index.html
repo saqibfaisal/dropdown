@@ -24,8 +24,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-
     }
     .main select{
         border: 2px solid black;
@@ -51,6 +49,13 @@
         margin: 20px;
         padding: 20px;
     }
+    #para{
+        margin: 20px;
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: 5px;
+
+    }
 </style>
 <body>
     <div class="mein">
@@ -60,7 +65,8 @@
      <select name="" id="mobileName" onchange="mobiles()"></select>
      <select name="" id="model"></select>
      <button onclick="searchVal()">search</button>
-    </div>
+     </div>
+     <p id="para"></p>
 </body>
 <script src="app.js"></script>
 </html>
